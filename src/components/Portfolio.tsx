@@ -5,6 +5,8 @@ import colombia from "@/assets/portfolio-colombia.jpg";
 import iemmi from "@/assets/portfolio-iemmi.jpg";
 import contafaq from "@/assets/portfolio-contafaq.png";
 import ec from "@/assets/portfolio-ec.jpg";
+import bonsalitasCards from "@/assets/portfolio-bonsalitas-cards.png";
+import bonsalitasMenu from "@/assets/portfolio-bonsalitas-menu.png";
 import { WHATSAPP_URL } from "./WhatsAppFloat";
 
 const items = [
@@ -13,6 +15,8 @@ const items = [
   { src: colombia, title: "Viajes Mich", tag: "Turismo · Performance" },
   { src: iemmi, title: "IEEMI", tag: "Educación · Lead Gen" },
   { src: contafaq, title: "Contafaq", tag: "B2B · Google Ads" },
+  { src: bonsalitasCards, title: "Bonsalitas", tag: "Branding · Papelería" },
+  { src: bonsalitasMenu, title: "Bonsalitas Menú", tag: "Diseño · Print" },
 ];
 
 export function Portfolio() {
