@@ -1,15 +1,13 @@
 import { Instagram, Facebook, Linkedin } from "lucide-react";
 import { WHATSAPP_URL } from "./WhatsAppFloat";
+import logo from "@/assets/nectarlab-logo.png";
 
 export function Footer() {
   return (
     <footer className="border-t border-border bg-card/40">
       <div className="mx-auto max-w-7xl px-6 py-16 grid gap-10 md:grid-cols-3">
         <div>
-          <div className="flex items-center gap-2">
-            <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-amber text-primary-foreground font-bold">N</span>
-            <span className="font-display text-lg font-semibold">Nectar<span className="text-primary">Lab</span></span>
-          </div>
+          <img src={logo} alt="Nectar Lab" width={180} height={48} className="h-10 w-auto" />
           <p className="mt-4 text-sm text-muted-foreground max-w-xs">
             Creamos estrategias que venden. Marketing digital con foco en resultados medibles.
           </p>
