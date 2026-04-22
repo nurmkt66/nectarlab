@@ -1,26 +1,41 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/Navbar";
+import { Hero } from "@/components/Hero";
+import { Services } from "@/components/Services";
+import { Results } from "@/components/Results";
+import { Portfolio } from "@/components/Portfolio";
+import { Testimonials } from "@/components/Testimonials";
+import { CTA } from "@/components/CTA";
+import { ContactForm } from "@/components/ContactForm";
+import { Footer } from "@/components/Footer";
+import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Nectar Lab — Agencia de marketing digital con resultados" },
+      { name: "description", content: "Impulsamos marcas con estrategia y resultados. Google Ads, Meta, TikTok, diseño y video que convierte. Habla con nosotros por WhatsApp." },
+      { property: "og:title", content: "Nectar Lab — Marketing digital que vende" },
+      { property: "og:description", content: "Publicidad en Google, Meta y TikTok con diseño y video que convierte." },
+      { property: "og:type", content: "website" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <main className="bg-background text-foreground">
+      <Navbar />
+      <Hero />
+      <Services />
+      <Results />
+      <Portfolio />
+      <Testimonials />
+      <CTA />
+      <ContactForm />
+      <Footer />
+      <WhatsAppFloat />
+    </main>
+  );
 }
