@@ -1,4 +1,5 @@
 import { WHATSAPP_URL } from "./WhatsAppFloat";
+import logo from "@/assets/nectarlab-logo.png";
 
 const links = [
   { href: "#servicios", label: "Servicios" },
@@ -13,12 +14,13 @@ export function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur-xl bg-background/70 border-b border-border/50">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <a href="#top" className="flex items-center gap-2 group">
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-amber text-primary-foreground font-bold transition-smooth group-hover:scale-105">
-            N
-          </span>
-          <span className="font-display text-lg font-semibold tracking-tight">
-            Nectar<span className="text-primary">Lab</span>
-          </span>
+          <img
+            src={logo}
+            alt="Nectar Lab"
+            width={160}
+            height={42}
+            className="h-9 w-auto transition-smooth group-hover:scale-105"
+          />
         </a>
         <nav className="hidden md:flex items-center gap-8">
           {links.map((l) => (
