@@ -8,7 +8,6 @@ import { Testimonials } from "@/components/Testimonials";
 import { CTA } from "@/components/CTA";
 import { ContactForm } from "@/components/ContactForm";
 import { Footer } from "@/components/Footer";
-import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -35,7 +34,6 @@ function Index() {
       <CTA />
       <ContactForm />
       <Footer />
-      <WhatsAppFloat />
     </main>
   );
 }
