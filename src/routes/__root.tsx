@@ -29,14 +29,18 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Nectarlab" },
+      { name: "description", content: "Impulsa tu negocio con una agencia de marketing digital enfocada en resultados. Expertos en Google Ads, Meta Ads y TikTok Ads con diseño y video profesional." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Nectarlab" },
+      { property: "og:description", content: "Impulsa tu negocio con una agencia de marketing digital enfocada en resultados. Expertos en Google Ads, Meta Ads y TikTok Ads con diseño y video profesional." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Nectarlab" },
+      { name: "twitter:description", content: "Impulsa tu negocio con una agencia de marketing digital enfocada en resultados. Expertos en Google Ads, Meta Ads y TikTok Ads con diseño y video profesional." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/8BooUjtHEROe0ChJTamHChuhNj12/social-images/social-1776881584947-nectarlab.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/8BooUjtHEROe0ChJTamHChuhNj12/social-images/social-1776881584947-nectarlab.webp" },
     ],
     links: [
       {
